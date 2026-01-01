@@ -1,0 +1,23 @@
+#snowfall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind content */
+    pointer-events: none; /* Prevent interaction */
+}
+
+.top {
+    position: relative;
+    overflow: hidden; /* Ensure canvas doesn't exceed section bounds */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1; /* Above canvas */
+}
+
+.top .container {
+    position: relative;
+    z-index: 1; /* Ensure content is above the canvas */
+}
